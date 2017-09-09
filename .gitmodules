@@ -1,0 +1,6 @@
+[submodule "tomorrow-theme"]
+	path = tomorrow-theme
+	url = git@github.com:chriskempson/tomorrow-theme.git
+[submodule "prezto"]
+	path = prezto
+	url = git@github.com:sorin-ionescu/prezto.git
