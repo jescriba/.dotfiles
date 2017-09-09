@@ -54,19 +54,26 @@ Plugins
 
 Why? 
 
-* Nice new simple code editor with fuzzy find search, basic file structure ui, tabs, and plugins! etc...
+- Nice new simple code editor with fuzzy find search, basic file structure ui, tabs, and plugins! etc...
 
 
 Plugins
 
-code completion
+wip
 
-**Ruby**
-rbenv, bundler
+### Ruby 
+**Rbenv** [Home](https://github.com/rbenv/rbenv)
 
-**Python**
-pip
+Why?
 
-**Swift**
+- Manage multiple ruby versions
 
+
+### Python
+
+- Good language maybe add juypter setup here at some point
+
+`brew install python`
+
+Pip - python package manager
 

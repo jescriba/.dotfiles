@@ -2,8 +2,8 @@
 
 # Install iTerm2
 echo "Installing iTerm2"
-curl https://www.iterm2.com/downloads/stable/latest
-unzip and install
+curl -L -o iterm2 https://www.iterm2.com/downloads/stable/latest
+# TODO 
 
 # Install Homebrew
 echo "Installing Homebrew"
@@ -36,4 +36,16 @@ echo "tomorrow-theme contains themes for iTerm, Atom, Vim"
 
 # Install Atom text editor
 echo "Installing Atom"
-curl https://atom.io/download/mac
+curl -L -o Atom https://atom.io/download/mac
+# TODO
+
+# Install Ruby with Rbenv and Bundler
+echo "Installing Rbenv to manage ruby"
+brew install rbenv
+rbenv init
+
+# Install Python and Pip
+echo "Installing Python and pip"
+brew install python
+curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+python get-pip.py
