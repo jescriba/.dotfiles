@@ -13,8 +13,7 @@ Why?
 
 - Split Panes, Hotkey Window, Search, Autocomplete, Mouseless Copy, Paste History, Instant Replay, Configurability, 256 Colors (or more!), more...
 
-### Homebrew
-[Home](https://brew.sh/)
+### Homebrew [Home](https://brew.sh/)
 
 Why?
 
@@ -50,6 +49,21 @@ Why?
 
 Plugins
 
+[Nerd Commenter](https://vimawesome.com/plugin/the-nerd-commenter) Code commenting
+
+[Ctrlp](https://vimawesome.com/plugin/ctrlp-vim-everything-has-changed) Fuzzy file finder
+
+[YouCompleteMe](https://vimawesome.com/plugin/youcompleteme) Code completion
+
+[Nerd Tree](https://vimawesome.com/plugin/nerdtree-red) Tree explorer
+
+[Surround Vim](https://vimawesome.com/plugin/surround-vim) Quoting/parenthesis made easy
+
+[Ack.Vim](https://vimawesome.com/plugin/ack-vim) Text finding
+
+TODO
+
+
 ### Atom [Home](https://atom.io/)
 
 Why? 
@@ -59,7 +73,9 @@ Why?
 
 Plugins
 
-wip
+[Vim Mode Plus](https://github.com/t9md/atom-vim-mode-plus)
+
+TODO
 
 ### Ruby 
 **Rbenv** [Home](https://github.com/rbenv/rbenv)
