@@ -1,9 +1,7 @@
 #!/bin/sh
 
-# Install iTerm2
-echo "Installing iTerm2"
-curl -L -o iterm2 https://www.iterm2.com/downloads/stable/latest
-# TODO 
+# Setup submodules 
+git submodule update --init --recursive
 
 # Install Homebrew
 echo "Installing Homebrew"
@@ -18,34 +16,21 @@ chsh -s /bin/zsh
 # Zprezto setup
 echo "Setting up Zprezto"
 setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-  done
-done
-
-# Install fasd 
-echo "Installing fasd"
-brew install fasd
 
 # Copy zshrc config
-echo "Copying zshrc"
-cp .zshrc ~/.zshrc
+echo "Linking zshrc"
+ln -s .zshrc ~/.zshrc
+
+# Install casks and packages designated in Brewfile
+brew bundle
 
 # Mention Theme - can I automate this?
-echo "tomorrow-theme contains themes for iTerm, Atom, Vim"
+echo "tomorrow-theme contains themes for iTerm, Atom, Vim, manually set these up for now.. :/"
 
-# Install Atom text editor
-echo "Installing Atom"
-curl -L -o Atom https://atom.io/download/mac
-# TODO
-
-# Install Ruby with Rbenv and Bundler
-echo "Installing Rbenv to manage ruby"
-brew install rbenv
+# Setup ruby eval command is part of zshrc
 rbenv init
 
 # Install Python and Pip
-echo "Installing Python and pip"
-brew install python
+echo "Installing pip for python"
 curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 python get-pip.py

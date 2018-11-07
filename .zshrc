@@ -4,6 +4,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
  
 eval "$(fasd --init auto)"
+eval "$(rbenv init -)"
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH
